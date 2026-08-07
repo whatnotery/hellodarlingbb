@@ -50,11 +50,11 @@
         />
         <meta
             property="og:url"
-            content="{{ site.url | default: 'https://www.hellodarlingbb.com' }}{{ page.url | relative_url }}"
+            content="{{ site.url | default: 'https://hellodarlingbb.com' }}{{ page.url | relative_url }}"
         />
         <meta
             property="og:image"
-            content="{{ '/assets/img/logo.png' | relative_url }}"
+            content="{{ site.url | default: 'https://hellodarlingbb.com' }}{{ '/assets/img/logo.png' | relative_url }}"
         />
         <meta property="og:locale" content="en_US" />
 
@@ -70,7 +70,7 @@
         />
         <meta
             name="twitter:image"
-            content="{{ site.url | default: 'https://www.hellodarlingbb.com' }}{{ '/assets/img/logo.png' | relative_url }}"
+            content="{{ site.url | default: 'https://hellodarlingbb.com' }}{{ '/assets/img/logo.png' | relative_url }}"
         />
     </head>
     <body class="container mx-auto md:w-3/4 bg-[#f9c1a8] text-[#391d0b]">
@@ -78,7 +78,7 @@
             class="flex min-h-screen flex-col items-center justify-center px-6 py-12"
         >
             <img
-                src="{{ site.url | default: 'https://www.hellodarlingbb.com' }}{{ '/assets/img/body.png' | relative_url }}"
+                src="{{ site.url | default: 'https://hellodarlingbb.com' }}{{ '/assets/img/body.png' | relative_url }}"
                 alt="{{ site.title }}"
                 class="h-auto w-96"
             />
