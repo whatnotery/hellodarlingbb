@@ -1,5 +1,5 @@
 <section id="bartenders" class="mx-auto text-center w-1/2 md:w-3/5 lg:w-1/2">
-    <h2 class="bella-font text-2xl mx-auto pb-2">Bartenders</h2>
+    <h2 class="bella-font text-2xl mx-auto pb-2">Our Bartenders</h2>
 
     <div class="flex flex-wrap justify-center">
         {% for bartender in site.data.bartenders %}
@@ -8,7 +8,7 @@
                 src="{{ '/assets/img/bartenders/' | append: bartender.name | append: '.png' | relative_url }}"
                 class="aspect-square rounded-full border-4 border-[#9b5f29] w-40"
             />
-            <h3 class="font-bold">{{ bartender.name }}</h3>
+            <h3 class="bella-font">{{ bartender.name }}</h3>
             <p class="text-xs w-40">{{ bartender.tidbit }}</p>
         </div>
         {% endfor %}

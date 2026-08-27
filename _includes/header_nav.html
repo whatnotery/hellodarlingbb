@@ -10,12 +10,20 @@
             class="w-[85%] md:w-[60%] lg:w-[45%] border-t-2 border-dashed border-current mx-auto"
         />
 
-        <nav class="bella-font text-lg md:text-2xl lg:text4xl">
+        <nav class="bella-font text-lg md:text-2xl lg:text-3xl">
             {% assign nav = site.pages | where_exp: "node", "node.title" | sort:
             "nav_order" %} {% for node in nav %}
             <a
                 class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}"
-                href="{{ node.url }}"
+                href="{% if node.external_url %}{{ node.external_url }}{% else %}{{ node.url }}{% endif %}"
+                {%
+                if
+                node.external_url
+                %}target="_blank"
+                rel="noopener"
+                {%
+                endif
+                %}
                 >{{ node.title }}</a
             >{% unless forloop.last %} // {% endunless %} {% endfor %}
         </nav>
