@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+    {% include head.html %}
+    <body class="container mx-auto md:w-3/4 bg-[#f9c1a8] text-[#391d0b]">
+        <main
+            class="flex min-h-screen flex-col items-center justify-center px-6 py-12"
+        >
+            <img
+                src="{{ site.url | default: 'https://hellodarlingbb.com' }}{{ '/assets/img/header.png' | relative_url }}"
+                alt="{{ site.title }}"
+                class="h-auto w-96"
+            />
+
+            <section class="mt-10 text-center">
+                <p class="mx-auto mt-4 max-w-lg text-md md:text-xl">
+                    Purveyors of Good Vibes, Fine Wine & Spirits.
+                    <br />Opening soon on the corner of Elm Tree and Short in
+                    Lexington, Kentucky.<br />
+                    <br />
+                    <a href="mailto:alex@hellodarlingbb.com"
+                        ><strong><em>Inquiries</em></strong></a
+                    >
+                </p>
+            </section>
+        </main>
+    </body>
+</html>

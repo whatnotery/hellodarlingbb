@@ -1,0 +1,97 @@
+---
+layout: default
+---
+
+<section class="container mx-auto md:w-3/4 px-6 pb-12">
+    <h1 class="bella-font text-3xl text-center py-6">Menu</h1>
+
+    <!-- Red & White: each own section, 2 columns on md+ -->
+    {% assign wine_order = "red|white" | split: "|" %} {% for category in
+    wine_order %} {% assign wines = site.data.menu.wine[category] %}
+    <section class="mb-10">
+        <h2 class="bella-font text-2xl text-center pb-4">
+            {{ category | capitalize }}
+        </h2>
+        <div class="grid gap-6 md:grid-cols-2 md:pl-16">
+            {% for wine in wines %}
+            <div>
+                <h3 class="bella-font">
+                    {{ wine.producer }} / {{ wine.country }} / {{ wine.region }}
+                </h3>
+                <p class="italic">{{ wine.grape }}</p>
+                <p class="text-sm mt-2">{{ wine.notes }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+    {% endfor %}
+
+    <!-- Rosé + Orange: one row, 2 columns -->
+    <section class="mb-10">
+        {% assign rose_orange = "rose|orange" | split: "|" %}
+        <div class="grid gap-6 md:grid-cols-2 md:pl-16">
+            {% for category in rose_orange %} {% for wine in
+            site.data.menu.wine[category] %}
+            <div>
+                <h2 class="bella-font text-2xl pb-2 text-center">
+                    {{ category | capitalize }}
+                </h2>
+                <h3 class="bella-font">
+                    {{ wine.producer }} / {{ wine.country }} / {{ wine.region }}
+                </h3>
+                <p class="italic">{{ wine.grape }}</p>
+                <p class="text-sm mt-2">{{ wine.notes }}</p>
+            </div>
+            {% endfor %} {% endfor %}
+        </div>
+    </section>
+
+    <!-- Sparkling + Sweet: new row, 2 columns -->
+    <section class="mb-10">
+        {% assign sparkling_sweet = "sparkling|sweet" | split: "|" %}
+        <div class="grid gap-6 md:grid-cols-2 md:pl-16">
+            {% for category in sparkling_sweet %} {% for wine in
+            site.data.menu.wine[category] %}
+            <div>
+                <h2 class="bella-font text-2xl pb-2 text-center">
+                    {{ category | capitalize }}
+                </h2>
+                <h3 class="bella-font">
+                    {{ wine.producer }} / {{ wine.country }} / {{ wine.region }}
+                </h3>
+                <p class="italic">{{ wine.grape }}</p>
+                <p class="text-sm mt-2">{{ wine.notes }}</p>
+            </div>
+            {% endfor %} {% endfor %}
+        </div>
+    </section>
+
+    <!-- Rotators: 3 columns on md+ -->
+    <section class="mb-10">
+        <h2 class="bella-font text-2xl text-center pb-4">Rotators</h2>
+        <div class="grid gap-6 md:grid-cols-3 md:pl-16">
+            {% for wine in site.data.menu.wine.rotaters %}
+            <div>
+                <h3 class="bella-font">
+                    {{ wine.producer }} / {{ wine.country }} / {{ wine.region }}
+                </h3>
+                <p class="italic">{{ wine.grape }}</p>
+                <p class="text-sm mt-2">{{ wine.notes }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+
+    <!-- Cocktails: 3 columns on md+ => 2 rows of 3 -->
+    <section class="mb-10">
+        <h2 class="bella-font text-2xl text-center pb-4">Cocktails</h2>
+        <div class="grid gap-6 md:grid-cols-3 md:pl-16">
+            {% for cocktail in site.data.menu.cocktails %}
+            <div>
+                <h3 class="bella-font">{{ cocktail.name }}</h3>
+                <p class="text-sm">{{ cocktail.notes }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+</section>

@@ -1,0 +1,21 @@
+<footer id="hours" class="mx-auto text-center w-2/3 mb-10">
+    <h2 class="bella-font text-2xl mx-auto pb-2">Hours & Directions</h2>
+    <div class="flex flex-col lg:flex-row justify-around pb-4">
+       <div>
+        {% for day in site.data.footer.hours %} <span class="bella-font">{{day.name}}</span> : {{day.hours}}
+        <br />
+        {% endfor %}
+
+       </div>
+       <div class="pt-4">
+        <h3 class="bella-font font-bold text-xl">Hello Darling <br> Bar & Bottle</h3>
+        <a href="mailto:{{site.email}}">{{site.email}}</a
+        ><br />
+        {{site.data.footer.address}} <br />
+        <a
+            class=" bella-font"
+            href="https://www.google.com/maps/dir//Hello+Darling+Bar+%26+Bottle,+128+Deweese+St+Ste+120,+Lexington,+KY+40507/@38.0438305,-84.4949165,17z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x884245d3596eaeaf:0xd9d7818f1de4137c!2m2!1d-84.4921274!2d38.0438504?entry=ttu&g_ep=EgoyMDI2MDgyNC4wIKXMDSoASAFQAw%3D%3D"
+            ><strong>Get Directions</strong></a
+       </div>
+    </div>
+</footer>

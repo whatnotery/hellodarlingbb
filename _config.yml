@@ -1,5 +1,9 @@
 title: Hello Darling Bar & Bottle - Coming Soon
 timezone: America/New_York
+email: hello@hellodarlingbb.com
 description: 'Purveyors of Good Vibes, Fine Wine and Spirits. Opening soon on the corner of Elm Tree and Short in Lexington, Kentucky.'
-baseurl: 'https://hellodarlingbb.com'
-url: ''
+baseurl: ''
+calendar_url: https://calendar.google.com/calendar/ical/c_7bdf3b214f13487b45d1e712dd3a0a4d72893f810e830cf806608e76b620d293%40group.calendar.google.com/public/basic.ics
+url: 'https://hellodarlingbb.com'
+plugins:
+- jekyll-ical-tag

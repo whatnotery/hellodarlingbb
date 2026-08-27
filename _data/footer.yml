@@ -1,0 +1,20 @@
+address: >-
+  128 Deweese St, Ste 120 <br>
+  Lexington, KY, 40507
+
+
+hours:
+  - name: Monday
+    hours: "Closed"
+  - name: Tuesday
+    hours: "11:00am - 9:00pm"
+  - name: Wednesday
+    hours: "11:00am - 9:00pm"
+  - name: Thursday
+    hours: "11:00am - 9:00pm"
+  - name: Friday
+    hours: "11:00am - 11:00pm"
+  - name: Saturday
+    hours: "11:00am - 11:00pm"
+  - name: Sunday
+    hours: "Closed"

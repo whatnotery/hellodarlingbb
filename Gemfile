@@ -13,7 +13,7 @@ gem "jekyll", "~> 4.3.3"
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 # gem "github-pages", group: :jekyll_plugins
 # If you have any plugins, put them here!
-
+gem 'jekyll-ical-tag', '~> 1.6'
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.

@@ -1,0 +1,23 @@
+<section class="container mx-auto md:w-3/4">
+    <header class="flex flex-col items-center py-4">
+        <img
+            src="{{ site.url | default: 'https://hellodarlingbb.com' }}{{ '/assets/img/header.png' | relative_url }}"
+            alt="{{ site.title }}"
+            class="h-auto w-11/12 md:w-2/3 lg:w-1/2 pb-4"
+        />
+
+        <hr
+            class="w-[85%] md:w-[60%] lg:w-[45%] border-t-2 border-dashed border-current mx-auto"
+        />
+
+        <nav class="bella-font text-lg md:text-2xl lg:text4xl">
+            {% assign nav = site.pages | where_exp: "node", "node.title" | sort:
+            "nav_order" %} {% for node in nav %}
+            <a
+                class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}"
+                href="{{ node.url }}"
+                >{{ node.title }}</a
+            >{% unless forloop.last %} // {% endunless %} {% endfor %}
+        </nav>
+    </header>
+</section>
