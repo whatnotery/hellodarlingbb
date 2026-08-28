@@ -14,7 +14,7 @@
             {% assign nav = site.pages | where_exp: "node", "node.title" | sort:
             "nav_order" %} {% for node in nav %}
             <a
-                class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}"
+                class="sidebar-nav-item{% if page.url == node.url %} active text-[#9b5f29]{% endif %}"
                 href="{% if node.external_url %}{{ node.external_url }}{% else %}{{ node.url }}{% endif %}"
                 {%
                 if
@@ -25,7 +25,8 @@
                 endif
                 %}
                 >{{ node.title }}</a
-            >{% unless forloop.last %} // {% endunless %} {% endfor %}
+            >
+            {% unless forloop.last %} // {% endunless %} {% endfor %}
         </nav>
     </header>
 </section>

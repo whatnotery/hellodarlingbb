@@ -68,18 +68,11 @@ layout: default
 
     <!-- Rotators: 3 columns on md+ -->
     <section class="mb-10">
-        <h2 class="bella-font text-2xl text-center pb-4">Rotators</h2>
-        <div class="grid gap-6 md:grid-cols-3 md:pl-16">
-            {% for wine in site.data.menu.wine.rotaters %}
-            <div>
-                <h3 class="bella-font">
-                    {{ wine.producer }} / {{ wine.country }} / {{ wine.region }}
-                </h3>
-                <p class="italic">{{ wine.grape }}</p>
-                <p class="text-sm mt-2">{{ wine.notes }}</p>
-            </div>
-            {% endfor %}
-        </div>
+        <h2 class="bella-font text-2xl text-center pb-4">Rotating</h2>
+        <p class="text-center">
+            We also have an additional Red, White, Rosé, Orange, &amp; Sparkling
+            that change out regularly
+        </p>
     </section>
 
     <!-- Cocktails: 3 columns on md+ => 2 rows of 3 -->
