@@ -4,12 +4,14 @@ layout: default
 
 <section id="about" class="mx-auto w-4/5 md:w-1/2 text-center">
     <h2 class="text-lg lg:text-2xl mx-auto pb-2">
-        <br />
-        <span class="bella-font">
+        <span class="rakkas-font">
             Purveyors of Good Vibes, Fine Wine & Spirits.
         </span>
-        <br />
-        <br /><br />
     </h2>
+    <img
+        src="{{ '/assets/img/footer.png' | relative_url }}"
+        alt="{{ site.title }}"
+        class="h-40 md:h-48 w-auto object-contain mx-auto pb-4"
+    />
 </section>
-{{content}} {% include bartenders.html %} {% include instagram.html %}
+{{content}}

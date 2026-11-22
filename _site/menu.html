@@ -20,9 +20,15 @@
         rel="stylesheet"
         href="/assets/css/style.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rakkas&display=swap"
+        rel="stylesheet"
+    />
     <link
         rel="stylesheet"
-        href="/assets/css/bellasmith.css"
+        href="/assets/css/fonts.css"
     />
 
     <!-- Favicon -->
@@ -106,11 +112,11 @@
             class="w-[85%] md:w-[60%] lg:w-[45%] border-t-2 border-dashed border-current mx-auto"
         />
 
-        <nav class="bella-font text-lg md:text-2xl lg:text-3xl">
+        <nav class="rakkas-font pt-3 text-2xl md:text-2xl lg:text-3xl">
              
             <a
                 class="sidebar-nav-item"
-                href="/home.html"
+                href="/"
                 
                 >Home</a
             >
@@ -124,256 +130,88 @@
              //  
             <a
                 class="sidebar-nav-item"
-                href="/events.html"
-                
-                >Events</a
-            >
-             //  
-            <a
-                class="sidebar-nav-item"
                 href="https://app.table22.com/product/darling-wine-club"
                 target="_blank"
                 rel="noopener"
                 
                 >Wine Club</a
             >
+             //  
+            <a
+                class="sidebar-nav-item"
+                href="https://order.toasttab.com/online/the-darling-wine-bar-2-128-deweese-st-ste120"
+                target="_blank"
+                rel="noopener"
+                
+                >Order</a
+            >
              
         </nav>
+
+        <hr
+            class="mt-3 w-[85%] md:w-[60%] lg:w-[45%] border-t-2 border-dashed border-current mx-auto"
+        />
     </header>
 </section>
 
         <section
             class="container flex flex-col items-center py-4 mx-auto md:w-3/4"
         >
-            <section class="container mx-auto md:w-3/4 px-6 pb-12">
-    <h1 class="bella-font text-3xl text-center py-6">Menu</h1>
-
-    <!-- Red & White: each own section, 2 columns on md+ -->
-      
-    <section class="mb-10">
-        <h2 class="bella-font text-2xl text-center pb-4">
-            Red
-        </h2>
-        <div class="grid gap-6 md:grid-cols-2 md:pl-16">
-            
-            <div>
-                <h3 class="bella-font">
-                    Castello di Verrazzano / Italy / Chianti Classico
-                </h3>
-                <p class="italic">Sangiovese</p>
-                <p class="text-sm mt-2">Bright cherry, dried herbs, and earthy tannins</p>
-            </div>
-            
-            <div>
-                <h3 class="bella-font">
-                    Bodegas Roda / Spain / Rioja
-                </h3>
-                <p class="italic">Tempranillo</p>
-                <p class="text-sm mt-2">Vanilla, blackberry, and leather with smooth oak integration</p>
-            </div>
-            
-            <div>
-                <h3 class="bella-font">
-                    Domaine Serene / USA / Willamette Valley
-                </h3>
-                <p class="italic">Pinot Noir</p>
-                <p class="text-sm mt-2">Red berry, cola, and forest floor with silky texture</p>
-            </div>
-            
-            <div>
-                <h3 class="bella-font">
-                    Penfolds / Australia / Barossa Valley
-                </h3>
-                <p class="italic">Shiraz</p>
-                <p class="text-sm mt-2">Black pepper, dark plum, and chocolate with bold structure</p>
-            </div>
-            
-        </div>
-    </section>
-     
-    <section class="mb-10">
-        <h2 class="bella-font text-2xl text-center pb-4">
-            White
-        </h2>
-        <div class="grid gap-6 md:grid-cols-2 md:pl-16">
-            
-            <div>
-                <h3 class="bella-font">
-                    Trimbach / France / Alsace
-                </h3>
-                <p class="italic">Riesling</p>
-                <p class="text-sm mt-2">Steely minerality, green apple, and citrus zest</p>
-            </div>
-            
-            <div>
-                <h3 class="bella-font">
-                    Kumeu River / New Zealand / Auckland
-                </h3>
-                <p class="italic">Chardonnay</p>
-                <p class="text-sm mt-2">White peach, toasted hazelnut, and creamy texture</p>
-            </div>
-            
-            <div>
-                <h3 class="bella-font">
-                    Weingut Dr. Loosen / Germany / Mosel
-                </h3>
-                <p class="italic">Riesling</p>
-                <p class="text-sm mt-2">Off-dry with lime, slate, and honeyed finish</p>
-            </div>
-            
-            <div>
-                <h3 class="bella-font">
-                    Rombauer Vineyards / USA / Carneros
-                </h3>
-                <p class="italic">Chardonnay</p>
-                <p class="text-sm mt-2">Buttery, vanilla, and tropical fruit with rich mouthfeel</p>
-            </div>
-            
-        </div>
-    </section>
-    
-
-    <!-- Rosé + Orange: one row, 2 columns -->
-    <section class="mb-10">
-        
-        <div class="grid gap-6 md:grid-cols-2 md:pl-16">
-             
-            <div>
-                <h2 class="bella-font text-2xl pb-2 text-center">
-                    Rose
-                </h2>
-                <h3 class="bella-font">
-                    Château Minuty / France / Côtes de Provence
-                </h3>
-                <p class="italic">Grenache/Cinsault</p>
-                <p class="text-sm mt-2">Pale pink, strawberry, white flowers, and crisp acidity</p>
-            </div>
-              
-            <div>
-                <h2 class="bella-font text-2xl pb-2 text-center">
-                    Orange
-                </h2>
-                <h3 class="bella-font">
-                    Principiano / Italy / Piedmont
-                </h3>
-                <p class="italic">Nascetta</p>
-                <p class="text-sm mt-2">Amber-hued, wild orange peel, chamomile, and oxidative depth</p>
-            </div>
-             
-        </div>
-    </section>
-
-    <!-- Sparkling + Sweet: new row, 2 columns -->
-    <section class="mb-10">
-        
-        <div class="grid gap-6 md:grid-cols-2 md:pl-16">
-             
-            <div>
-                <h2 class="bella-font text-2xl pb-2 text-center">
-                    Sparkling
-                </h2>
-                <h3 class="bella-font">
-                    Schramsberg / USA / Napa Valley
-                </h3>
-                <p class="italic">Chardonnay/Pinot Noir</p>
-                <p class="text-sm mt-2">Brioche, green apple, and fine persistent bubbles</p>
-            </div>
-              
-            <div>
-                <h2 class="bella-font text-2xl pb-2 text-center">
-                    Sweet
-                </h2>
-                <h3 class="bella-font">
-                    Kracher / Austria / Neusiedlersee
-                </h3>
-                <p class="italic">Welschriesling</p>
-                <p class="text-sm mt-2">Luscious honey, apricot, and botrytis spice</p>
-            </div>
-             
-        </div>
-    </section>
-
-    <!-- Rotators: 3 columns on md+ -->
-    <section class="mb-10">
-        <h2 class="bella-font text-2xl text-center pb-4">Rotating</h2>
-        <p class="text-center">
-            We also have an additional Red, White, Rosé, Orange, &amp; Sparkling
-            that change out regularly
-        </p>
-    </section>
-
-    <!-- Cocktails: 3 columns on md+ => 2 rows of 3 -->
-    <section class="mb-10">
-        <h2 class="bella-font text-2xl text-center pb-4">Cocktails</h2>
-        <div class="grid gap-6 md:grid-cols-3 md:pl-16">
-            
-            <div>
-                <h3 class="bella-font">Old Fashioned</h3>
-                <p class="text-sm">Bourbon, sugar, bitters, orange twist</p>
-            </div>
-            
-            <div>
-                <h3 class="bella-font">Negroni</h3>
-                <p class="text-sm">Gin, Campari, sweet vermouth, orange peel</p>
-            </div>
-            
-            <div>
-                <h3 class="bella-font">Margarita</h3>
-                <p class="text-sm">Tequila, lime juice, Cointreau, salt rim</p>
-            </div>
-            
-            <div>
-                <h3 class="bella-font">Daiquiri</h3>
-                <p class="text-sm">White rum, fresh lime juice, simple syrup</p>
-            </div>
-            
-            <div>
-                <h3 class="bella-font">Smoked Maple Sour</h3>
-                <p class="text-sm">Bourbon, maple syrup, lemon juice, smoked salt</p>
-            </div>
-            
-            <div>
-                <h3 class="bella-font">Garden Spritz</h3>
-                <p class="text-sm">Elderflower liqueur, prosecco, cucumber, mint</p>
-            </div>
-            
-        </div>
-    </section>
+            <section class="container mx-auto md:w-2/3 px-6 pb-12">
+    <img
+        src="/assets/img/menu.webp"
+        alt="Menu"
+        class="h-auto w-full mx-auto pt-6 pb-4"
+    />
 </section>
 
         </section>
         <footer id="hours" class="mx-auto text-center w-2/3 mb-10">
-    <h2 class="bella-font text-2xl mx-auto pb-2">Hours & Directions</h2>
+    <h2 class="rakkas-font text-2xl mx-auto pb-2">Hours & Directions</h2>
     <div class="flex flex-col lg:flex-row justify-around pb-4">
-       <div>
-         <span class="bella-font">Monday</span> : Closed
-        <br />
-         <span class="bella-font">Tuesday</span> : 11:00am - 9:00pm
-        <br />
-         <span class="bella-font">Wednesday</span> : 11:00am - 9:00pm
-        <br />
-         <span class="bella-font">Thursday</span> : 11:00am - 9:00pm
-        <br />
-         <span class="bella-font">Friday</span> : 11:00am - 11:00pm
-        <br />
-         <span class="bella-font">Saturday</span> : 11:00am - 11:00pm
-        <br />
-         <span class="bella-font">Sunday</span> : Closed
-        <br />
-        
-
-       </div>
-       <div class="pt-4">
-        <h3 class="bella-font font-bold text-xl">Hello Darling <br> Bar & Bottle</h3>
-        <a href="mailto:hello@hellodarlingbb.com">hello@hellodarlingbb.com</a
-        ><br />
-        128 Deweese St, Ste 120 <br> Lexington, KY, 40507 <br />
-        <a
-            class=" bella-font"
-            href="https://www.google.com/maps/dir//Hello+Darling+Bar+%26+Bottle,+128+Deweese+St+Ste+120,+Lexington,+KY+40507/@38.0438305,-84.4949165,17z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x884245d3596eaeaf:0xd9d7818f1de4137c!2m2!1d-84.4921274!2d38.0438504?entry=ttu&g_ep=EgoyMDI2MDgyNC4wIKXMDSoASAFQAw%3D%3D"
-            ><strong>Get Directions</strong></a
-       </div>
+        <div>
+            
+            <span class="rakkas-font">Monday</span> : Closed
+            <br />
+            
+            <span class="rakkas-font">Tuesday</span> : 11:00am - 9:00pm
+            <br />
+            
+            <span class="rakkas-font">Wednesday</span> : 11:00am - 9:00pm
+            <br />
+            
+            <span class="rakkas-font">Thursday</span> : 11:00am - 9:00pm
+            <br />
+            
+            <span class="rakkas-font">Friday</span> : 11:00am - 11:00pm
+            <br />
+            
+            <span class="rakkas-font">Saturday</span> : 11:00am - 11:00pm
+            <br />
+            
+            <span class="rakkas-font">Sunday</span> : Closed
+            <br />
+            
+        </div>
+        <div class="pt-4">
+            <h3 class="rakkas-font font-bold text-xl">
+                Hello Darling <br />
+                Bar & Bottle
+            </h3>
+            <a href="mailto:hello@hellodarlingbb.com">hello@hellodarlingbb.com</a><br />
+            128 Deweese St, Ste 120 <br> Lexington, KY, 40507 <br />
+            <a
+                class="rakkas-font"
+                href="https://www.google.com/maps/dir//Hello+Darling+Bar+%26+Bottle,+128+Deweese+St+Ste+120,+Lexington,+KY+40507/@38.0438305,-84.4949165,17z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x884245d3596eaeaf:0xd9d7818f1de4137c!2m2!1d-84.4921274!2d38.0438504?entry=ttu&g_ep=EgoyMDI2MDgyNC4wIKXMDSoASAFQAw%3D%3D"
+                ><strong>Get Directions</strong></a
+            >
+        </div>
     </div>
+    <img
+        src="/assets/img/home.png"
+        alt="Hello Darling Bar & Bottle - Coming Soon"
+        class="h-40 md:h-48 w-auto object-contain mx-auto pb-4 lg:-mt-24"
+    />
 </footer>
 
     </body>

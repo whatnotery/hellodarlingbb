@@ -1,3 +1,13 @@
 .sidebar-nav-item.active {
     color: #9b5f29;
 }
+
+body {
+    background-color: #f9c1a8;
+    background-image:
+        linear-gradient(rgba(249, 193, 168, 0.6), rgba(249, 193, 168, 0.6)),
+        url('../img/bg.png');
+    background-repeat: repeat, repeat;
+    background-size: 450px, 450px;
+    font-family: "Noto Sans", sans-serif;
+}

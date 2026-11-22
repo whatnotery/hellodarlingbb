@@ -23,3 +23,16 @@
 .bella-font {
    font-family: BellasmithSans, sans-serif;
 }
+
+.noto-font {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+
+}
+
+.rakkas-font {
+  font-family: "Rakkas", serif;
+  font-weight: 400;
+  font-style: normal;
+}
